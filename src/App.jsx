@@ -1,11 +1,13 @@
 import * as React from 'react';
-import { UseFetchDemo } from './components/UseFetchDemo';
 import { Tab } from './components/Tab';
+import { UseFetchDemo } from './components/UseFetchDemo';
 import { UseLocalStorageDemo } from './components/UseLocalStorageDemo';
+import { UseHoverDemo } from './components/UseHoverDemo';
 
 const tabsData = {
   useFetch: <UseFetchDemo/>,
   useLocalStorage: <UseLocalStorageDemo/>,
+  useHover: <UseHoverDemo/>,
 };
 
 export function App() {
