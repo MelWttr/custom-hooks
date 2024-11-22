@@ -3,11 +3,13 @@ import { Tab } from './components/Tab';
 import { UseFetchDemo } from './components/UseFetchDemo';
 import { UseLocalStorageDemo } from './components/UseLocalStorageDemo';
 import { UseHoverDemo } from './components/UseHoverDemo';
+import { UseViewportSizeDemo } from './components/UseViewportSizeDemo';
 
 const tabsData = {
   useFetch: <UseFetchDemo/>,
   useLocalStorage: <UseLocalStorageDemo/>,
   useHover: <UseHoverDemo/>,
+  useViewportSize: <UseViewportSizeDemo/>,
 };
 
 export function App() {

@@ -1,8 +1,8 @@
-import * as React from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 export function useHover() {
-  const [hovered, setIsHovered] = React.useState(false);
-  const ref = React.useRef(null);
+  const [hovered, setIsHovered] = useState(false);
+  const ref = useRef(null);
 
   const handleRefMouseOver = () => {
     setIsHovered(true);
@@ -12,7 +12,7 @@ export function useHover() {
     setIsHovered(false);
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     const element = ref.current;
     if (element) {
       element.addEventListener('mouseover', handleRefMouseOver);

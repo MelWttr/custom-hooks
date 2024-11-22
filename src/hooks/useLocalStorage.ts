@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 type LocalStorageSetValue = string;
 type LocalStorageReturnValue = LocalStorageSetValue | null;
