@@ -5,6 +5,7 @@
         "commonjs": true
     },
     "rules": {
+        "consistent-return": "off",
         "react/prop-types": "off",
         "import/prefer-default-export": "off",
         "no-unused-vars": ["error", { "varsIgnorePattern": "^React$" }],
