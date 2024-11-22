@@ -1,9 +1,11 @@
 import * as React from 'react';
 import { UseFetchDemo } from './components/UseFetchDemo';
 import { Tab } from './components/Tab';
+import { UseLocalStorageDemo } from './components/UseLocalStorageDemo';
 
 const tabsData = {
   useFetch: <UseFetchDemo/>,
+  useLocalStorage: <UseLocalStorageDemo/>,
 };
 
 export function App() {
