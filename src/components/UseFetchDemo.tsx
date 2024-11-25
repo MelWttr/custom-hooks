@@ -1,5 +1,12 @@
-import * as React from 'react';
+import React from 'react';
 import { useFetch } from '../hooks/useFetch';
+
+interface Post {
+  userId: number,
+  id: number,
+  title: string,
+  body: string,
+}
 
 export function UseFetchDemo() {
   const {
@@ -7,7 +14,7 @@ export function UseFetchDemo() {
     isLoading,
     error,
     refetch,
-  } = useFetch('https://jsonplaceholder.typicode.com/posts');
+  } = useFetch<Post[]>('https://jsonplaceholder.typicode.com/posts');
 
   return (
     <div>
@@ -22,7 +29,7 @@ export function UseFetchDemo() {
       </div>
       {isLoading && 'Загрузка...'}
       {error && 'Произошла ошибка'}
-      {data && !isLoading && data.map((item) => <div key={item.id}>{item.title}</div>) }
+      {data && !isLoading && data.map((item: Post) => <div key={item.id}>{item.title}</div>) }
     </div>
   );
 }
