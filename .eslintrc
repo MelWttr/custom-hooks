@@ -8,6 +8,7 @@
         "react/prop-types": "off",
         "import/prefer-default-export": "off",
         "no-unused-vars": ["error", { "varsIgnorePattern": "^React$" }],
+        "linebreak-style": ["error", "unix"],
         "import/extensions": [
             "error",
             "ignorePackages",
